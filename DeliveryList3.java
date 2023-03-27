@@ -16,7 +16,8 @@ public class DeliveryList3 {
         Client client9 = new Client("宮藤官九郎", LocalDate.of(2023, 3, 22), 15, 2);
 
         Scanner scanner = new Scanner(System.in);
-        System.out.print("新しい荷物情報です。\n顧客の名前は？");  String name = scanner.next();
+        System.out.print("新しい荷物情報です。\n顧客の名前は？");
+        String name = scanner.next();
         System.out.print("配達年は？");
         int year = scanner.nextInt();
         System.out.print("配達月は？");
