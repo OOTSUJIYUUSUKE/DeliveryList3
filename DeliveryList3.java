@@ -35,7 +35,7 @@ public class DeliveryList3 {
                 .thenComparing(Client::getDeliveryTime)
                 .thenComparing(Client::getQuantity);   //配達日時、時間、配達個数順で並び替える
 
-        System.out.println("配達予定一覧を表示します。");
+        System.out.println("今月の配達予定一覧を表示します。");
         clientList.stream().sorted(comparator).forEach(client -> {
             System.out.printf("%-6s", client.getName());
             System.out.println("(配達予定：" + client.getDeliveryDate() + "の"
